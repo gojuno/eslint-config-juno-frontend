@@ -2,9 +2,11 @@
   "name": "eslint-config-juno-frontend",
   "version": "1.0.0",
   "description": "ESLint configuration used by Juno's frontend",
+  "repository": "gojuno/eslint-config-juno-frontend",
   "author": "Juno Inc.",
   "license": "ISC",
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
