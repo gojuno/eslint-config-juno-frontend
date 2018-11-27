@@ -12,11 +12,11 @@ module.exports = {
   },
   "rules": {
     "prefer-const": "warn",
-    "react/prop-types": ["enabled", {
+    "react/prop-types": ["warn", {
       "ignore": ["dispatch"]
     }],
     "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
-    "react/jsx-no-target-blank": 1
+    "react/jsx-no-target-blank": "warn"
   },
   "globals": {
     "__REVISION__" : false
