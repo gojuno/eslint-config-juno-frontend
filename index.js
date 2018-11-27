@@ -15,7 +15,8 @@ module.exports = {
     "react/prop-types": ["enabled", {
       "ignore": ["dispatch"]
     }],
-    "no-unused-vars": ["error", { "ignoreRestSiblings": true }]
+    "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+    "react/jsx-no-target-blank": 1
   },
   "globals": {
     "__REVISION__" : false
