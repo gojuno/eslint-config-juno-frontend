@@ -3,12 +3,15 @@ module.exports = {
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ],
+  "plugins": ["jest"],
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "rules": {
     "prefer-const": "warn",
@@ -16,7 +19,14 @@ module.exports = {
       "ignore": ["dispatch"]
     }],
     "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
-    "react/jsx-no-target-blank": "warn"
+    "react/jsx-no-target-blank": "warn",
+
+    // Jest
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
   },
   "globals": {
     "__REVISION__" : false
